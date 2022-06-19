@@ -38,7 +38,8 @@ public class Basic {
 		// });
 
 		send.addActionListener(e -> {
-			System.out.println(ButtonFunction.returnValueClick());
+			System.out.println(TimeLogFunctions.getActualData());
+			System.out.println(TimeLogFunctions.getWeekDayString());
 		});
 		// Text Area at the center
 		JTextArea ta = new JTextArea();
