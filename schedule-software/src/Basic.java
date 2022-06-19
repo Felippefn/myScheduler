@@ -44,8 +44,8 @@ public class Basic {
 		send.addActionListener(e -> {
 			System.out.println(TimeLogFunctions.getCurrentData());
 			System.out.println(TimeLogFunctions.getWeekDayString());
-			System.out.println(CreatePayload.returnCorretPayload(TimeLogFunctions.getCurrentData(), TimeLogFunctions.getWeekDayString()
-			, tf.getText(), 2));
+			System.out.println(CreatePayload.returnCorrectPayload(TimeLogFunctions.getCurrentData(), TimeLogFunctions.getWeekDayString()
+			, tf.getText(), tf2.getText()));
 		});
 		// Text Area at the center
 		// JTextArea ta = new JTextArea();
