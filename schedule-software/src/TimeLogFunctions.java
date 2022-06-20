@@ -1,13 +1,14 @@
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 
 public class TimeLogFunctions {
 
 // Creating a function to return the name of day week
     public static String getWeekDayString() {  
         Date date = new Date();
-        DateFormat formatter = new SimpleDateFormat("EEEE");
+        DateFormat formatter = new SimpleDateFormat("EEEE", Locale.ENGLISH);
         return formatter.format(date);
     }
 // Creating a function to return the time
